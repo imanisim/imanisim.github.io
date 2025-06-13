@@ -91,12 +91,25 @@
   }
 }
 
-.pdf-hero-banner {
-    background-color: #f8f9fa;
-    padding: 40px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.pdf-wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 8.5 / 11; /* maintains paper proportion */
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
 }
+
+.responsive-pdf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 
 body {
   margin: 0;
